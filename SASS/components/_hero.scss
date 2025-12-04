@@ -1,0 +1,44 @@
+.hero{
+  padding-bottom: 110px;
+}
+.hero .title {
+  font-size: 85px;
+  margin-bottom: 55px;
+}
+.hero__description{
+  width: 572px;
+  margin-bottom: 55px;
+}
+.hero__button {
+  margin-right: 16px;
+}
+.hero__box--btn{
+  display: flex;
+}
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+   align-items:flex-end;
+}
+.hero__button--dark {
+  background: $colorBlack;
+  border: 1px solid $colorGray;
+}
+.hero__num{
+    color: $colorWhite;
+    font-size: 62px;
+    &::after{
+        content: "+";
+        color: $colorGreen;
+      
+    }
+}
+.hero__list{
+    display: flex;
+    margin-top: 30px;
+    gap: 70px;
+}
+
+.hero__text{
+    width: 123px;
+}

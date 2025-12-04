@@ -1,0 +1,39 @@
+body{
+
+background-color: rgba(28, 29, 30, 1);
+}
+
+.logo{
+    color: $colorGreen;
+    font-weight: 800;
+    font-size: 40px;
+}
+.title{
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 1;
+    color: $colorWhite;
+}
+.title__span{
+    color: $colorGreen;
+}
+.button{
+    font-weight: 600;
+    font-size: 24px;
+    color: $colorWhite;
+    padding: 20px 80px;
+    background: linear-gradient(265.23deg, #237249 6.79%, #35C66B 97.2%);
+    border-radius: 82px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+.icon{
+width: 40px;
+height: 40px;
+  fill: $colorGreen;
+}
+html{
+  scroll-behavior: smooth;
+}
+
