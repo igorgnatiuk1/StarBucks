@@ -1,13 +1,20 @@
 .advantages {
-  padding-bottom: 135px;
+ margin-bottom: 110px;
+   @media screen and (min-width: 1200px) {
+   margin-bottom: 135px;
+  }
 }
 
 .advantages__box {
-  width: 1030px;
-  height: 375px;
+ 
+  height: 350px;
   border-radius: 46px;
   background-color: $colorWhite;
   margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+     width: 1030px;
+  height: 375px;
+  }
 }
 
 

@@ -1,4 +1,4 @@
-.products{
+.products {
   margin-bottom: 110px;
 }
 
@@ -8,6 +8,7 @@
 }
 .products__box {
   display: flex;
+  align-items: center;
   margin-bottom: 65px;
 }
 .products__title {
@@ -55,7 +56,15 @@
   border-radius: 50%;
   background: linear-gradient(265.23deg, #237249 6.79%, #35c66b 97.2%);
 }
-.products__list{
+.products__list {
   display: flex;
-  justify-content: space-between;
+ flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+ @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    gap: 0;
+     
+    
+  }
 }

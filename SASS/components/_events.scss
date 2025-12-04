@@ -1,4 +1,4 @@
-.events{
+.events {
   padding-bottom: 150px;
 }
 
@@ -17,16 +17,20 @@
 }
 .events__title {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 1;
-  margin-bottom: 45px;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+
   color: $colorWhite;
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 45px;
+  }
 }
 .events__item {
-  // width: 600px;
-  // height: 260px;
-  max-width: 600px;
-  width: 100%;
+  width: 410px;
+
   height: 260px;
   background-color: $colorGray;
   border-radius: 50px;
@@ -35,13 +39,22 @@
   background-image: url(/images/kitchen.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  &:nth-child(2){
-     background-image: url(/images/free_coffee.jpg);
-  }&:nth-child(3){
+  &:nth-child(2) {
+    background-image: url(/images/free_coffee.jpg);
+  }
+  &:nth-child(3) {
     background-image: url(/images/instagram.jpg);
   }
-  &:nth-child(4){
+  &:nth-child(4) {
     background-image: url(/images/choose_us.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    height: 240px;
+  }
+  @media screen and (min-width: 1500px) {
+    width: 720px;
+    height: 305px;
   }
 }
 .events__list {
@@ -53,8 +66,5 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;   /* або flex-start */
-}
-.events__item:nth-child(n + 3) {
-  margin-top: 45px;
+  justify-content: center; /* або flex-start */
 }

@@ -40,15 +40,21 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
   .container {
-    width: 768px;
+    width: 880px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -60,13 +66,14 @@ button {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.63;
   color: #d9d9d9;
 }
-
-body {
-  background-color: rgb(28, 29, 30);
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 .logo {
@@ -75,11 +82,20 @@ body {
   font-size: 40px;
 }
 
+body {
+  background-color: rgb(18, 21, 23);
+}
+
 .title {
   font-weight: 800;
-  font-size: 80px;
+  font-size: 64px;
   line-height: 1;
   color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 80px;
+  }
 }
 
 .title__span {
@@ -88,13 +104,19 @@ body {
 
 .button {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
-  padding: 20px 80px;
-  background: linear-gradient(265.23deg, #237249 6.79%, #35C66B 97.2%);
+  padding: 20px 70px;
+  background: linear-gradient(265.23deg, #237249 6.79%, #35c66b 97.2%);
   border-radius: 82px;
   border: 1px solid transparent;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    font-size: 24px;
+    padding: 20px 80px;
+  }
 }
 
 .icon {
@@ -114,25 +136,47 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
+  height: 85px;
+}
+@media screen and (min-width: 1200px) {
+  .header .container {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .header .container {
+    height: 130px;
+  }
 }
 
 .header {
-  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    margin-bottom: 50px;
+  }
 }
 
 .header .logo {
-  margin-right: 94px;
+  margin-right: 70px;
+}
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 95px;
+  }
 }
 
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 60px;
 }
-
-.header__list {
-  gap: 95px;
+@media screen and (min-width: 1200px) {
+  .header__list {
+    gap: 95px;
+  }
 }
 
 .header__link {
@@ -140,27 +184,12 @@ html {
 }
 
 .hero {
-  padding-bottom: 110px;
+  margin-bottom: 80px;
 }
-
-.hero .title {
-  font-size: 85px;
-  margin-bottom: 55px;
-}
-
-.hero__description {
-  width: 572px;
-  margin-bottom: 55px;
-}
-
-.hero__button {
-  margin-right: 16px;
-}
-
-.hero__box--btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-bottom: 110px;
+  }
 }
 
 .hero .container {
@@ -170,9 +199,39 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.hero .title {
+  font-size: 60px;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 1200px) {
+  .hero .title {
+    font-size: 85px;
+    margin-bottom: 55px;
+  }
+}
+
+.hero__description {
+  margin-bottom: 55px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__description {
+    width: 572px;
+  }
+}
+
+.hero__box--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__button {
+  margin-right: 16px;
 }
 
 .hero__button--dark {
@@ -182,35 +241,64 @@ html {
 
 .hero__num {
   color: rgb(255, 255, 255);
-  font-size: 62px;
+  font-size: 50px;
 }
 .hero__num::after {
   content: "+";
   color: rgb(53, 198, 107);
+}
+@media screen and (min-width: 1200px) {
+  .hero__num {
+    font-size: 62px;
+  }
 }
 
 .hero__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
   gap: 70px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__list {
+    margin-top: 30px;
+  }
 }
 
 .hero__text {
   width: 123px;
 }
 
+.hero__img {
+  width: 340px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__img {
+    width: 470px;
+  }
+}
+
 .advantages {
-  padding-bottom: 135px;
+  margin-bottom: 110px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    margin-bottom: 135px;
+  }
 }
 
 .advantages__box {
-  width: 1030px;
-  height: 375px;
+  height: 350px;
   border-radius: 46px;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .advantages__box {
+    width: 1030px;
+    height: 375px;
+  }
 }
 
 .advantages__list {
@@ -278,12 +366,21 @@ html {
 }
 
 .result .title {
-  margin-bottom: 65px;
+  margin-bottom: 45px;
+}
+@media screen and (min-width: 1200px) {
+  .result .title {
+    margin-bottom: 65px;
+  }
 }
 
 .desc {
-  width: 475px;
-  margin-bottom: 65px;
+  width: 400px;
+}
+@media screen and (min-width: 1200px) {
+  .desc {
+    width: 475px;
+  }
 }
 
 .box__image {
@@ -300,20 +397,12 @@ html {
 }
 
 .result2 {
-  width: 465px;
+  width: 350px;
 }
-
-.color img {
-  width: 180px;
-}
-
-.color ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .result2 {
+    width: 465px;
+  }
 }
 
 .products {
@@ -329,6 +418,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 65px;
 }
 
@@ -390,9 +482,20 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .products__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+  }
 }
 
 .events {
@@ -423,15 +526,21 @@ html {
 
 .events__title {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 1;
-  margin-bottom: 45px;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 25px;
   color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1200px) {
+  .events__title {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 45px;
+  }
 }
 
 .events__item {
-  max-width: 600px;
-  width: 100%;
+  width: 410px;
   height: 260px;
   background-color: rgb(217, 217, 217);
   border-radius: 50px;
@@ -449,6 +558,18 @@ html {
 }
 .events__item:nth-child(4) {
   background-image: url(/images/choose_us.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .events__item {
+    width: 570px;
+    height: 240px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .events__item {
+    width: 720px;
+    height: 305px;
+  }
 }
 
 .events__list {
@@ -472,10 +593,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; /* або flex-start */
-}
-
-.events__item:nth-child(n+3) {
-  margin-top: 45px;
 }
 
 .contacts {

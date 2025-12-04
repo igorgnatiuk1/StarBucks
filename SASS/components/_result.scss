@@ -1,31 +1,30 @@
-.result{
-    padding-bottom: 130px;
+.result {
+  padding-bottom: 130px;
 }
 
-.result .title{
+.result .title {
+  margin-bottom: 45px;
+  @media screen and (min-width: 1200px) {
     margin-bottom: 65px;
+  }
 }
-.desc{
+.desc {
+  width: 400px;
+  @media screen and (min-width: 1200px) {
     width: 475px;
-    margin-bottom: 65px;
+  }
 }
-.box__image{
-    width: 445px;
+.box__image {
+  width: 445px;
 }
-.result .container{
-    display: flex;
-    justify-content: space-between;
+.result .container {
+  display: flex;
+  justify-content: space-between;
 }
-.result2{
+.result2 {
+  width: 350px;
+  @media screen and (min-width: 1200px) {
     width: 465px;
+  }
 }
 
-
-.color img{
-    width: 180px;
-}
-
-.color ul{
-    display: flex;
-    align-items: center;
-}
