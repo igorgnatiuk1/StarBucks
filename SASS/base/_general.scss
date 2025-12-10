@@ -1,0 +1,65 @@
+
+// html,
+// body {
+//   overflow-x: hidden;
+// }
+.logo {
+  color: $colorGreen;
+  font-weight: 800;
+  font-size: 31px;
+  @media screen and (min-width: 880px) {
+    font-size: 40px;
+  }
+}
+body {
+  // margin: 0;
+  background-color: rgba(18, 21, 23, 1);
+  
+  
+}
+.title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1;
+  color: $colorWhite;
+  @media screen and (min-width: 1200px) {
+    font-size: 80px;
+  }
+}
+.title__span {
+  color: $colorGreen;
+}
+.button {
+  font-weight: 600;
+  font-size: 20px;
+  color: $colorWhite;
+  padding: 20px 70px;
+  background: linear-gradient(265.23deg, #237249 6.79%, #35c66b 97.2%);
+  border-radius: 82px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    padding: 20px 80px;
+  }
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: $colorGreen;
+}
+html {
+  scroll-behavior: smooth;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

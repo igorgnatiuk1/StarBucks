@@ -1,0 +1,81 @@
+.events {
+  padding-bottom: 150px;
+}
+.events .title {
+  margin-bottom: 50px;
+  @media screen and (min-width: 880px) {
+    margin-bottom: 0;
+  }
+}
+.events__desc {
+  @media screen and (min-width: 880px) {
+    width: 475px;
+    margin-right: 75px;
+  }
+}
+.events__box {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 55px;
+  @media screen and (min-width: 880px) {
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+}
+.events__button {
+  padding: 20px 50px;
+}
+.events__title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+
+  color: $colorWhite;
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 45px;
+  }
+}
+.events__item {
+  width: 410px;
+
+  height: 262px;
+  background-color: $colorGray;
+  border-radius: 50px;
+  padding-top: 45px;
+  padding-left: 30px;
+  background-image: url(../images/kitchen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:nth-child(2) {
+    background-image: url(../images/free_coffee.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(../images/instagram.jpg);
+  }
+  &:nth-child(4) {
+    background-image: url(../images/choose_us.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    height: 240px;
+  }
+  @media screen and (min-width: 1500px) {
+    width: 720px;
+    height: 305px;
+  }
+}
+.events__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.events__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; /* або flex-start */
+}
